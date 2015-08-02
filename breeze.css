@@ -38,15 +38,19 @@ p {
 }
 
 em {
-
+    font-weight: 900;
+    font-style: normal;
 }
 
 strong {
-
+    font-weight: 900;
+    font-style: italic;
 }
 
 a {
-
+    color: #999;
+    text-decoration: dashed;
+    font-weight: bold;
 }
 
 br {
@@ -59,27 +63,25 @@ img {
 
 
 ul, ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 5px 16px 5px 16px;
 
 }
 
 li {
     padding-top: 5px;
-}
-
-
-
-ol > li {
-
+    padding-left: 5px;
 }
 
 code {
     border: 1px solid #aaaaaa;
-    padding: 10px;
+    padding: 16px;
     display: block;
     overflow: scroll;
+    background: #f8f8f8;
 }
 
 blockquote {
-    border-left: 7px solid #aaaaaa;
+    border-left: 7px solid #bfbfbf;
 }
