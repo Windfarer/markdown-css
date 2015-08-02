@@ -57,17 +57,17 @@ img {
 
 }
 
-ul {
+
+ul, ol {
+    padding: 5px 16px 5px 16px;
 
 }
 
-ul > li {
-
+li {
+    padding-top: 5px;
 }
 
-ol {
 
-}
 
 ol > li {
 
@@ -76,10 +76,10 @@ ol > li {
 code {
     border: 1px solid #aaaaaa;
     padding: 10px;
-    width: 100%;
+    display: block;
+    overflow: scroll;
 }
 
 blockquote {
-    width: 100%;
     border-left: 7px solid #aaaaaa;
 }
