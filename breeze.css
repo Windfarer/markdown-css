@@ -1,0 +1,85 @@
+h1,h2,h3,h4,h5,h6,p,img,ul,ol,code,blockquote {
+    margin-left:16px;
+    margin-right: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+h1 {
+    font-size: 38px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    margin: 5px 16px 5px 16px;
+}
+
+em {
+
+}
+
+strong {
+
+}
+
+a {
+
+}
+
+br {
+
+}
+
+img {
+
+}
+
+ul {
+
+}
+
+ul > li {
+
+}
+
+ol {
+
+}
+
+ol > li {
+
+}
+
+code {
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    width: 100%;
+}
+
+blockquote {
+    width: 100%;
+    border-left: 7px solid #aaaaaa;
+}
