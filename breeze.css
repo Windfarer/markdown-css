@@ -71,7 +71,7 @@
     padding-left: 5px;
 }
 
-.markdown > code {
+.markdown > pre > code {
     border: 1px solid #aaaaaa;
     padding: 16px;
     display: block;
@@ -79,6 +79,14 @@
     background: #fcfcfc;
 }
 
+.markdown > code {
+    border: 1px solid #aaaaaa;
+    padding: 3px;
+    display: inline-block;
+    background: #fcfcfc;
+}
+
 .markdown > blockquote {
     border-left: 7px solid #bfbfbf;
+    margin: 0;
 }
