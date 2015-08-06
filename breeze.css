@@ -1,79 +1,77 @@
-h1,h2,h3,h4,h5,h6,p,img,ul,ol,code,blockquote {
-    margin-left:16px;
-    margin-right: 16px;
+.markdown > h1,h2,h3,h4,h5,h6,p,img,ul,ol,code,blockquote {
 }
 
-h1,h2,h3,h4,h5,h6,p {
+.markdown > h1,h2,h3,h4,h5,h6,p {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-h1 {
+.markdown > h1 {
     font-size: 38px;
     padding-bottom: 10px;
     border-bottom: 1px solid #aaa;
 }
 
-h2 {
+.markdown > h2 {
     font-size: 34px;
 }
 
-h3 {
+.markdown > h3 {
     font-size: 30px;
 }
 
-h4 {
+.markdown > h4 {
     font-size: 26px;
 }
 
-h5 {
+.markdown > h5 {
     font-size: 22px;
 }
 
-h6 {
+.markdown > h6 {
     font-size: 18px;
 }
 
-p {
+.markdown > p {
 }
 
-em {
+.markdown > em {
     font-weight: 900;
     font-style: normal;
 }
 
-strong {
+.markdown > strong {
     font-weight: 900;
     font-style: italic;
 }
 
-a {
+.markdown > a {
     color: #999;
     text-decoration: dashed;
     font-weight: bold;
 }
 
-br {
+.markdown > br {
 
 }
 
-img {
+.markdown > img {
 
 }
 
 
-ul, ol {
+.markdown > ul, ol {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px 16px 5px 16px;
 
 }
 
-li {
+.markdown > li {
     padding-top: 5px;
     padding-left: 5px;
 }
 
-code {
+.markdown > code {
     border: 1px solid #aaaaaa;
     padding: 16px;
     display: block;
@@ -81,6 +79,6 @@ code {
     background: #fcfcfc;
 }
 
-blockquote {
+.markdown > blockquote {
     border-left: 7px solid #bfbfbf;
 }
