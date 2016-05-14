@@ -74,7 +74,7 @@
     width: auto; }
     .markdown pre code {
       line-height: 1.4em;
-      background-color: whitesmoke;
+      background-color: white;
       border: 1px solid #e6e6e6;
       display: block;
       padding: 16px;
@@ -82,6 +82,7 @@
       width: auto; }
   .markdown table {
     text-align: center;
+    background-color: #FFF;
     border-bottom: 2px solid #e6e6e6;
     border-collapse: collapse;
     width: 100%;
@@ -92,18 +93,21 @@
       font-weight: bold;
       padding: 9px 0 9px 0; }
     .markdown table tr {
-      line-height: 38.4px;
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: 1px solid #f0f0f0;
       height: 38.4px; }
     .markdown table thead {
-      background-color: #ebebeb; }
+      background-color: #f0f0f0; }
       .markdown table thead th {
-        font-weight: bold; }
+        font-weight: bold;
+        vertical-align: middle;
+        padding: 4px; }
     .markdown table tbody {
       font-size: 15.008px; }
       .markdown table tbody tr td {
-        color: #5e5e5e; }
+        color: #5e5e5e;
+        vertical-align: middle;
+        padding: 4px; }
       .markdown table tbody tr:nth-child(even) {
-        background-color: whitesmoke; }
+        background-color: #fafafa; }
       .markdown table tbody tr:hover {
-        background-color: #f0f0f0; }
+        background-color: #f7f7f7; }
