@@ -1,45 +1,181 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="zh-Hans-cmn">
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="breeze.css">
+    <title>Markdown-CSS Sample Page</title>
+    <link rel="stylesheet" href="breeze.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #FAFAFA;
+        }
+        .markdown{
+            width: 600px;
+            margin: 0 auto;
+            padding: 48px 0;
+        }
+    </style>
 </head>
-<body class="markdown">
-<h1>这是标题h1</h1>
-<h2>这是标题h2</h2>
-<h3>这是标题h3</h3>
-<h4>这是标题h4</h4>
-<h5>这是标题h5</h5>
-<h6>这是标题h6</h6>
-<p>正文 Lorem <em>ipsum</em> dolor sit <strong>amet</strong>, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. </p>
-<p><a href="http://baidu.com">这是一个链接</a></p>
-<p>
-    这是一个<em>强调</em>，又一个<strong>强调</strong>
-</p>
-<blockquote><p>this is asdfsdf</p><p>this is asdfsdf</p><p>this is asdfsdf</p></blockquote>
-<pre><code>from app import create_app
-    app = create_app()
-
-    if __name__ == "__main__":
-
-    app = create_app()
-    app.run(host="0.0.0.0",port=5000,debug=True, threaded=True)
-</code></pre>
-一句命令 <code>ps aux|grep nginx</code>
-<ul>
-    <li>line1</li>
-    <li>line2</li>
-    <li>line3</li>
-    <li>line4</li>
-    <li>line5</li>
-</ul>
-<ol>
-    <li>line1</li>
-    <li>line2</li>
-    <li>line3</li>
-    <li>line4</li>
-    <li>line5</li>
-</ol>
+<body>
+    <div class="markdown">
+        <h1>标题示例 - H1 - This a headline.</h1>
+        <h2>标题示例 - H2 - This a headline.</h2>
+        <h3>标题示例 - H3 - This a headline.</h3>
+        <h4>标题示例 - H4 - This a headline.</h4>
+        <h5>标题示例 - H5 - This a headline.</h5>
+        <h6>标题示例 - H6 - This a headline.</h6>
+        <blockquote>
+            <p>这是一个区块引用。- This is a blockquote.</p>
+            <p>永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹；又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。是日也，天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderitieyse in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </blockquote>
+        <ul>
+            <li>这是一个无序列表的第一项。</li>
+            <li>第二项就是我。</li>
+            <li>也没有什么意义的第三项。</li>
+            <li>最后再补一个，凑和偶数吧。</li>
+        </ul>
+        <ul>
+            <li>This is the 1st item of an unordered list.</li>
+            <li>This is the 2nd item.</li>
+            <li>This is the 3rd item of this unordered list.</li>
+            <li>This is the 4th item.</li>
+        </ul>
+        <hr>
+        <ol>
+            <li>这是一个无序列表的第一项。</li>
+            <li>第二项就是我。</li>
+            <li>也没有什么意义的第三项。</li>
+            <li>最后再补一个，凑和偶数吧。</li>
+        </ol>
+        <ol>
+            <li>This is the 1st item of an ordered list.</li>
+            <li>This is the 2nd item.</li>
+            <li>This is the 3rd item of this ordered list.</li>
+            <li>This is the 4th item.</li>
+        </ol>
+        <hr>
+        <pre><code>// 这是一个代码示例。- This is a code sample. Make this Sentence longer.
+(function(){
+    function sample(){
+        var a = 2;
+        return a;
+    }
+})();</code>
+        </pre>
+        <hr>
+        <p>这是一个各种段落示意。 - This is a paragraph sample.</p>
+        <p>夫人之相与，俯仰一世，或取诸怀抱，悟言一室之内；<a href="#!">或因寄所托，放浪形骸之外。</a>虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，不知老之将至。<em>及其所之既倦，情随事迁，感慨系之矣。</em>向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀。<strong>况修短随化，终期于尽。</strong>古人云：“死生亦大矣。”岂不痛哉！</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#!">sed do eiusmod tempor incididunt</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <em>ullamco laboris nisi ut aliquip ex ea commodo consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint occaecat cupidatat non proident</strong>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>这是段落内<code>document.write('Code')</code>的示意。</p>
+        <p>This is a <code>document.write('Code Sample')</code> in a paragraph.</p>
+        <hr>
+        <p>这是图片示例: - This is picture samples:</p>
+        <p><img src="big_image.jpg"></p>
+        <p>这是一段里有一个小图<img src="small_image.png">的示例。</p>
+        <p>This is a small picture <img src="small_image.png"> in a paragraph.</p>
+        <hr>
+        <table>
+            <caption>这是一个表格的示例。</caption>
+            <thead>
+                <tr>
+                    <th>第一列</th>
+                    <th>第二列</th>
+                    <th>第三列</th>
+                    <th>第四列</th>
+                    <th>第五列</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                </tr>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                </tr>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                </tr>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                </tr>
+                <tr>
+                    <td>数据1</td>
+                    <td>数据2</td>
+                    <td>数据3</td>
+                    <td>数据4</td>
+                    <td>数据5</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>This is a table Sample.</caption>
+            <thead>
+                <tr>
+                    <th>1st Column</th>
+                    <th>2nd Column</th>
+                    <th>3rd Column</th>
+                    <th>4th Column</th>
+                    <th>5th Column</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                </tr>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                </tr>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                </tr>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                </tr>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data3</td>
+                    <td>Data4</td>
+                    <td>Data5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

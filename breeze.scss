@@ -1,0 +1,181 @@
+// Variables
+
+$sans-serif: system, -apple-system, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft Yahei', 'ST Heiti', 'WenQuanYi Micro Hei', sans-serif;
+$serif: 'Times New Roman', 'Songti SC', STSong, NSimSun, SimSun, "WenQuanYi Bitmap Song", serif;
+
+$font-color: #444; 
+$font-family: $serif;
+$base-font-size: 16px;
+$shadow-color: rgba(255, 255, 255, 0.8);
+$decoration-color: #CCC;
+
+.markdown{
+	color: $font-color;
+	font-family: $font-family;
+	font-size: $base-font-size;
+	text-align: justify;
+	text-justify: inter-ideographic;
+	text-shadow: 1px 0 0 $shadow-color;
+	word-wrap: break-word;
+	line-height: 1.7em;
+
+	h1{
+		font-size: $base-font-size * 2;
+		width: 100%;
+		border-bottom: 1px solid $decoration-color;
+		padding: $base-font-size 0 $base-font-size 0;
+		margin: $base-font-size 0 $base-font-size 0;
+	}
+
+	h2{
+		font-size: $base-font-size * 1.5;
+		padding: $base-font-size * 0.75 0 $base-font-size * 0.75 0;
+		margin: $base-font-size * 0.75 0 $base-font-size * 0.75 0;
+	}
+
+	h3{
+		font-size: $base-font-size * 1.125;
+		padding: $base-font-size * 0.5625 0 $base-font-size * 0.5625 0;
+		margin: $base-font-size * 0.5625 0 $base-font-size * 0.5625 0;
+	}
+
+	h4{
+		font-size: $base-font-size;
+		padding: $base-font-size * 0.5 0 $base-font-size * 0.5 0;
+		margin: $base-font-size * 0.5 0 $base-font-size * 0.5 0;
+	}
+
+	h5{
+		font-size: $base-font-size * 0.813;
+		padding: $base-font-size * 0.4065 0 $base-font-size * 0.4065 0;
+		margin: $base-font-size * 0.4065 0 $base-font-size * 0.4065 0;
+	}
+
+	h6{
+		font-size: $base-font-size * 0.75;
+		padding: $base-font-size * 0.375 0 $base-font-size * 0.375 0;
+		margin: $base-font-size * 0.375 0 $base-font-size * 0.375 0;
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		font-weight: bold;
+	}
+
+	hr{
+		border: 0;
+		height: 1px;
+		border-bottom: 1px solid $shadow-color;
+		background-color: $decoration-color;
+		margin: 0.5em 0 0.5em 0;
+	}
+
+	blockquote{
+		border-left: 4px solid lighten($decoration-color, 10%);
+		padding: $base-font-size * 0.375 0 $base-font-size * 0.375 $base-font-size;
+
+		p{
+			font-size: $base-font-size * 0.875;
+			line-height: 1.6em;
+		}
+	}
+
+	p{
+		margin: 0.5em 0 0.5em 0;
+
+		a{
+			color: mix($font-color, #4A90E2, 32%);
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		code{
+			background-color: lighten($decoration-color, 16%);
+			border: 1px solid lighten($decoration-color, 10%);
+			display: inline-block;
+			padding: 0 $base-font-size * 0.375;
+			margin: 0 $base-font-size * 0.375;
+		}
+
+		img{
+			width: auto;
+			max-width: 100%;
+		}
+	}
+
+	ul, ol{
+		margin: $base-font-size * 1.25 0;
+
+		li{
+			list-style-position: inside;
+			margin: $base-font-size * 0.5;
+		}
+	}
+
+	pre{
+		font-family: $sans-serif;
+		overflow: auto;
+		width: auto;
+
+		code{
+			line-height: 1.4em;
+			background-color: lighten($decoration-color, 16%);
+			border: 1px solid lighten($decoration-color, 10%);
+			display: block;
+			padding: $base-font-size;
+			overflow: auto;
+			width: auto;
+		}
+	}
+
+	table{
+		text-align: center;
+		border-bottom: 2px solid lighten($decoration-color, 10%);
+		border-collapse: collapse;
+		width: 100%;
+		margin: $base-font-size * 1.5 0;
+		padding: $base-font-size * 0.75 0;
+
+		caption{
+			font-size: $base-font-size * 1.125;
+			font-weight: bold;
+			padding: $base-font-size * 0.5625 0 $base-font-size * 0.5625 0;
+		}
+
+		tr{
+			line-height: $base-font-size * 2.4;
+			border-bottom: 1px solid lighten($decoration-color, 10%);
+			height: $base-font-size * 2.4;
+		}
+
+		thead{
+			background-color: lighten($decoration-color, 12%);
+
+			th{
+				font-weight: bold;
+			}
+		}
+
+		tbody{
+			font-size: $base-font-size * 0.938;
+
+			tr{
+
+				td{
+					color: lighten($font-color, 10%);
+				}
+
+				&:nth-child(even){
+					background-color: lighten($decoration-color, 16%);
+				}
+
+				&:hover{
+					background-color: lighten($decoration-color, 14%);
+				}
+			}
+		}
+
+	}
+}
